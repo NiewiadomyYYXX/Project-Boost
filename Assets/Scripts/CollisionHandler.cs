@@ -1,7 +1,9 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
+
     void OnCollisionEnter(Collision collision)
     {
         switch (collision.gameObject.tag)
@@ -10,11 +12,24 @@ public class CollisionHandler : MonoBehaviour
                 Debug.Log("Start line");
                 break;
             case "Finish":
-                Debug.Log("Win");
+                NextLevel();
                 break;
             default:
-                Debug.Log("Dead");
+                ReloadLevel();
                 break;
         }
     }
+
+    void ReloadLevel()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
+    }
+
+    void NextLevel()
+    {
+        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        SceneManager.LoadScene(nextSceneIndex);
+    }
+
 }
