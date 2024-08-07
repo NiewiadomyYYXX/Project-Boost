@@ -33,20 +33,30 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
-            if(!a.isPlaying)
-            {
-                a.PlayOneShot(mainEngine);
-            }
-            if (!MainEngine.isPlaying)
-            {
-                MainEngine.Play();
-            }
+            StartThrust();
         }
         else
         {
-            a.Stop();
-            MainEngine.Stop();
+            StopThrust();
+        }
+    }
+
+    private void StopThrust()
+    {
+        a.Stop();
+        MainEngine.Stop();
+    }
+
+    private void StartThrust()
+    {
+        rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
+        if (!a.isPlaying)
+        {
+            a.PlayOneShot(mainEngine);
+        }
+        if (!MainEngine.isPlaying)
+        {
+            MainEngine.Play();
         }
     }
 
@@ -54,24 +64,39 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            ApplyRotation(rotationTune);
-            if (!RightEngine.isPlaying)
-            {
-                RightEngine.Play();
-            }
+            LeftRotationTune();
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            ApplyRotation(-rotationTune);
-            if (!LeftEngine.isPlaying)
-            {
-                LeftEngine.Play();
-            }
+            RightRotationTune();
         }
         else
         {
-            RightEngine.Stop();
-            LeftEngine.Stop();
+            StopRotation();
+        }
+    }
+
+    private void StopRotation()
+    {
+        RightEngine.Stop();
+        LeftEngine.Stop();
+    }
+
+    private void RightRotationTune()
+    {
+        ApplyRotation(-rotationTune);
+        if (!LeftEngine.isPlaying)
+        {
+            LeftEngine.Play();
+        }
+    }
+
+    private void LeftRotationTune()
+    {
+        ApplyRotation(rotationTune);
+        if (!RightEngine.isPlaying)
+        {
+            RightEngine.Play();
         }
     }
 
