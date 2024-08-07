@@ -122,6 +122,23 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &536821219 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1518811243984980824, guid: c4327dd6a25d71c49828ee6fd0fc9a26, type: 3}
+  m_PrefabInstance: {fileID: 1223287551}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &536821220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536821219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ab350dded01f6a4d964aef7bad1d599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &615262061
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,10 +365,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Gratulacje! \nUko\u0144czy\u0142e\u015B gr\u0119. Je\u015Bli grasz na
     naszym serwerze Minecraft i jeste\u015B jedn\u0105 z pierwszych trzech os\xF3b,
-    kt\xF3re uko\u0144czy\u0142y gr\u0119, otrzymasz kod, kt\xF3ry b\u0119dzie si\u0119
-    mno\u017Cy\u0107 2,5x codziennie. Kod mo\u017Cesz u\u017Cy\u0107 raz. Aby odebra\u0107
-    nagrod\u0119, wy\u015Blij zrzut ekranu z godzin\u0105 i swoim nickiem (albo poka\u017C
-    na live'ie).\n\nKliknij <Space> by kontynuowa\u0107"
+    kt\xF3re uko\u0144czy\u0142y gr\u0119, otrzymasz kod (2000x Monet), kt\xF3ry
+    b\u0119dzie si\u0119 mno\u017Cy\u0107 2,5x codziennie. Kod mo\u017Cesz u\u017Cy\u0107
+    raz. Aby odebra\u0107 nagrod\u0119, wy\u015Blij zrzut ekranu z godzin\u0105 i
+    swoim nickiem (albo poka\u017C na live'ie).\n\nKliknij <Space> by kontynuowa\u0107"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -543,7 +560,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1518811243984980824, guid: c4327dd6a25d71c49828ee6fd0fc9a26, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 536821220}
   m_SourcePrefab: {fileID: 100100000, guid: c4327dd6a25d71c49828ee6fd0fc9a26, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
