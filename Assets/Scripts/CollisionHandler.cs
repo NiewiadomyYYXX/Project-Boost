@@ -14,10 +14,39 @@ public class CollisionHandler : MonoBehaviour
     AudioSource a;
 
     bool isTransitioning = false;
+    bool cheatCollision = false;
 
     void Start()
     {
         a = GetComponent<AudioSource>();
+    }
+
+    void Update()
+    {
+        CheatSkip();
+        CheatCollision();
+    }
+
+    void CheatSkip()
+    {
+        if (Input.GetKey(KeyCode.L))
+        {
+            if (Input.GetKey(KeyCode.PageDown))
+            {
+                StartNext();
+            }
+        }
+    }
+
+    void CheatCollision()
+    {
+        if (Input.GetKey(KeyCode.C))
+        {
+            if (Input.GetKey(KeyCode.PageUp))
+            {
+                cheatCollision = true;
+            }
+        }
     }
 
     void OnCollisionEnter(Collision collision)
@@ -31,12 +60,15 @@ public class CollisionHandler : MonoBehaviour
         switch (collision.gameObject.tag)
         {
             case "Friendly":
-                Debug.Log("Start line");
                 break;
             case "Finish":
                 StartNext();
                 break;
             default:
+                if (cheatCollision == true)
+                {
+                    break;
+                }
                 StartCrash();
                 break;
         }
