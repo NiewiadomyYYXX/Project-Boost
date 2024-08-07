@@ -5,13 +5,12 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
 
-    Rigidbody rb;
-
-    AudioSource a;
-
     [SerializeField] float mainThrust = 1000;
-
     [SerializeField] float rotationTune = 100;
+    [SerializeField] AudioClip mainEngine;
+
+    Rigidbody rb;
+    AudioSource a;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +33,7 @@ public class Movement : MonoBehaviour
             rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
             if(!a.isPlaying)
             {
-                a.Play();
+                a.PlayOneShot(mainEngine);
             }
         }
         else

@@ -317,9 +317,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 870436263715845632, guid: 1ca4ffb7bc830c541946ecb7576e3b19, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: bb21eac5a82eade468cb1f8566c64b94, type: 3}
+    - target: {fileID: 870436263715845632, guid: 1ca4ffb7bc830c541946ecb7576e3b19, type: 3}
       propertyPath: NextLvlDelay
       value: 1.25
       objectReference: {fileID: 0}
+    - target: {fileID: 870436263715845632, guid: 1ca4ffb7bc830c541946ecb7576e3b19, type: 3}
+      propertyPath: SuccessSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f38282fc9bbba834fbc61f2593c28c3d, type: 3}
     - target: {fileID: 2049384455332290325, guid: 1ca4ffb7bc830c541946ecb7576e3b19, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -360,6 +368,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5255894434562907340, guid: 1ca4ffb7bc830c541946ecb7576e3b19, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200410861901609904, guid: 1ca4ffb7bc830c541946ecb7576e3b19, type: 3}
+      propertyPath: mainEngine
+      value: 
+      objectReference: {fileID: 8300000, guid: e84a38c92421ba64481ab911982c33fe, type: 3}
     - target: {fileID: 8240882197952570937, guid: 1ca4ffb7bc830c541946ecb7576e3b19, type: 3}
       propertyPath: m_Name
       value: Rocket
