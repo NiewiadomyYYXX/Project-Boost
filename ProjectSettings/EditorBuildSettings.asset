@@ -10,7 +10,16 @@ EditorBuildSettings:
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/Under.unity
-    guid: 9137e15265c62da45962549e22914d39
+    guid: 642c9a497bd55934fa611d8a8c1b0301
+  - enabled: 1
+    path: Assets/Scenes/Flappy.unity
+    guid: 69871f561abc0f2408daa6bee38b26bb
+  - enabled: 1
+    path: Assets/Scenes/Dark.unity
+    guid: aedef59ffa03d0841b2b4e60dbee4926
+  - enabled: 1
+    path: Assets/Scenes/Floor.unity
+    guid: 7b288861371efc94bb81c1ab0fcdd090
   - enabled: 1
     path: Assets/Scenes/Congratulations.unity
     guid: f060e8293dabb7249bd6a699b8051af4
