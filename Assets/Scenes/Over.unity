@@ -3152,9 +3152,17 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1696174854}
+    - target: {fileID: 5714859858423014421, guid: 875704bd9eb3ce945b42ec5b48b5fc5f, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8334789149384949505, guid: 875704bd9eb3ce945b42ec5b48b5fc5f, type: 3}
       propertyPath: m_Name
       value: Follow Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334789149384949505, guid: 875704bd9eb3ce945b42ec5b48b5fc5f, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
